@@ -1,0 +1,62 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css';
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.url-input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#urlInput {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+#urlInput:focus {
+  border-color: #93c5fd;
+}
+
+#analyzeButton {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#analyzeButton:hover {
+  background-color: #2563eb;
+}
+
+#resultContainer {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+  background-color: #f3f4f6;
+  display: none;
+}
+
+.result-text {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #1f2937;
+}

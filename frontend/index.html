@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebpageAnalyzer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container mx-auto px-4 py-10">
+        <h1 class="text-4xl font-bold mb-6">WebpageAnalyzer</h1>
+        <div class="flex flex-col items-center">
+            <input type="text" id="urlInput" class="border-2 border-gray-300 p-2 rounded w-full md:w-1/2" placeholder="Enter a URL">
+            <button id="analyzeButton" class="bg-blue-500 text-white px-4 py-2 rounded mt-4" onclick="analyzeUrl()">Analyze</button>
+        </div>
+        <div id="resultContainer" class="mt-8 text-center">
+            <!-- Result will be displayed here -->
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
